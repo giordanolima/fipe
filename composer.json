@@ -1,0 +1,32 @@
+{
+    "name": "giordanolima/fipe",
+    "description": "Web Crawler para consultar valores atuais e de meses passados da tabela Fipe.",
+    "keywords": ["php", "laravel", "fipe"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giordano Lima",
+            "email": "giordanol@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/config": "^5.1",
+        "illuminate/database": "^5.1",
+        "illuminate/support": "^5.1",
+        "guzzlehttp/guzzle": "~6.0",
+        "nesbot/carbon": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "GiordanoLima\\Fipe\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GiordanoLima\\Fipe\\FipeServiceProvider"
+            ]
+        }
+    }
+}
