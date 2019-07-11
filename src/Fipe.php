@@ -54,6 +54,16 @@ class Fipe {
 	}
 
 	/**
+	 * Buscar o tipo de veículo que será utilizado na busca.
+	 * 
+	 * @param  integer $referencia ID do tipo de veículo.
+	 * @return FipeLib
+	 */
+	public function getTipo() {
+		return $this->tipo;
+	}
+
+	/**
 	 * Define o mês/ano de referência que será utilizada na busca.
 	 * 
 	 * @param  integer $referencia ID da referência.
